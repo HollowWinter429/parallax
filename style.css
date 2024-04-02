@@ -359,7 +359,107 @@ parallax {
         height: 30px;
         width: 30px;
     }
+
+    .bg-img {
+        width: initial;
+        height: 234.26%;
+    }
+    
+    .fog-7 {
+        width: initial;
+        height: 152.27%;
+    }
+    
+    .mountain-10 {
+        width: initial;
+        height: 81.98%;
+    }
+    .fog-6 {
+        width: initial;
+        height: 181.55%;
+    }
+    
+    .mountain-9 {
+        width: initial;
+        height: 50.37%;
+    }
+    
+    .mountain-8 {
+        width: initial;
+        height: 93.71%;
+    }
+    
+    .fog-5 {
+        width: initial;
+        height: 46.85%;
+    }
+    
+    .mountain-7 {
+        width: initial;
+        height: 58.56%;
+    }
+    
+    .mountain-6 {
+        width: initial;
+        height: 58.56%;
+    }
+    
+    .fog-4 {
+        width: initial;
+        height: 58.56%;
+    }
+    
+    .mountain-5 {
+        width: initial;
+        height: 58.56%;
+    }
+    
+    .fog-3 {
+        width: initial;
+        height: 117.14%;
+    }
+    
+    .mountain-4 {
+        width: initial;
+        height: 81.98%;
+    }
+    
+    .mountain-3 {
+        width: initial;
+        height: 35.14%;
+    }
+    
+    .fog-2 {
+        width: initial;
+        height: 117.14%;
+    }
+    
+    .mountain-2 {
+        width: initial;
+        height: 76.19%;
+    }
+    
+    .mountain-1 {
+        width: initial;
+        height: 46.85%;
+    }
+    
+    .sun-rays {
+        width: initial;
+        height: 70.27%;
+    }
+    
+    .black-shadow {
+        width: initial;
+        height: 192%;
+    }
+    
+    .fog-1 {
+        width: initial;
+        height: 175.70%;
+    }
 }
+
 
 @media (max-width: 520px) {
     .text h1 {

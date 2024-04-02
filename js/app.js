@@ -1,5 +1,6 @@
 const parallax_elements = document.querySelectorAll(".parallax");
 const main = document.querySelector("main");
+const header = document.querySelector("header");
 
 let x = 0;
 let y = 0;
