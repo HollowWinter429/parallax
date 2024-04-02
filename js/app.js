@@ -25,6 +25,11 @@ function update(cur){
     })
 }
 
+window.addEventListener('load', () => {
+    // Scroll to the top of the page
+    document.body.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+
 update(0);
 
 window.addEventListener("mousemove", (e) => {
@@ -47,6 +52,8 @@ if (window.innerWidth >= 725) {
 }
 
 //GSAP animation
+
+document.body.style.overflow = "hidden";
 
 let timeline = gsap.timeline();
 
@@ -73,5 +80,17 @@ timeline.from(".hide", {
     opacity: 0,
     duration: 1.5,
 }, "3")
+
+timeline.eventCallback("onComplete", function() {
+    document.body.style.overflowY = "auto";
+});
+
+ScrollReveal({
+    distance: "90px",
+    delay: 300,
+    reset: true,
+})
+ScrollReveal().reveal(".reveal-title", {origin: "left"})
+ScrollReveal().reveal(".reveal-text", {delay: 500} )
 
 

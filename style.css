@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+
 
 *, *::before, *::after {
     padding: 0;
@@ -9,6 +10,7 @@
 
 body {
     font-family: "Poppings", sans-serif;
+    overflow-x: hidden;
 }
 
 ::selection {
@@ -312,6 +314,26 @@ parallax {
     pointer-events: none;
 }
 
+.sec {
+    position: relative;
+    background: #003329;
+    padding: 13.02% 7.31%;
+    font-family: "poppins";
+}
+
+.sec h2 {
+    font-size: 3em;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 0.73%;
+}
+.sec p {
+    font-size: 1em;
+    font-weight: 300;
+    color: #fff;
+}
+
+
 @media (max-width: 1100px) {
     .text h1 {
         font-size: 5.8rem;
@@ -377,6 +399,7 @@ parallax {
     .fog-6 {
         width: initial;
         height: 181.55%;
+        display: none;
     }
     
     .mountain-9 {
@@ -458,10 +481,15 @@ parallax {
         width: initial;
         height: 175.70%;
     }
+
 }
 
 
 @media (max-width: 520px) {
+
+    .text {
+        top: 35%;
+    }
     .text h1 {
         font-size: 3.3rem;
     }
