@@ -1,6 +1,5 @@
 const parallax_elements = document.querySelectorAll(".parallax");
 const main = document.querySelector("main");
-const header = document.querySelector("header");
 
 let x = 0;
 let y = 0;
@@ -65,21 +64,30 @@ Array.from(parallax_elements).filter((element) => !element.classList.contains("t
     }, "1");
 });
 
+if (document.querySelector(".text h1")) {
 timeline.from(".text h1", {
     y: window.innerHeight - document.querySelector(".text h1").getBoundingClientRect().top + 200,
     duration: 2,
-}, "2.5")
+}, "2")}
 
+if (document.querySelector(".text h2")) {
 timeline.from(".text h2", {
     y: -150,
     opacity: 0,
     duration: 1.5,
-}, "3")
+}, "2.5")}
 
+if (document.querySelector(".hide")) {
 timeline.from(".hide", {
     opacity: 0,
     duration: 1.5,
-}, "3")
+}, "2.5")}
+
+if (document.querySelector(".login")) {
+timeline.from(".login", {
+    opacity: 0,
+    duration: 1.5,
+}, "2.5")}
 
 timeline.eventCallback("onComplete", function() {
     document.body.style.overflowY = "auto";
